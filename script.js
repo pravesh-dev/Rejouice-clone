@@ -70,3 +70,18 @@ function page2Animation(){
     });
 };
 page2Animation();
+function page3Animation(){
+    gsap.from("#page3_top h3",{
+        y: 120,
+        stagger: 0.2,
+        duration: 2,
+        scrollTrigger: {
+            trigger: "#page3",
+            scroller: "#main",
+            start: "top 62%",
+            end: "top 61%",
+            scrub: 5,
+        },
+    });
+};
+page3Animation();
